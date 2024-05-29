@@ -1,0 +1,20 @@
+{
+  "name": "discord-bot",
+  "version": "1.7.3",
+  "description": "a discord bot we're making to learn",
+  "main": "bot.js",
+  "author": "Zachary Morris/Anand Biehl",
+  "license": "ISC",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.1.0",
+    "discord.js": "^12.1.1",
+    "roll": "^1.2.0",
+    "shelljs": "^0.8.5",
+    "superagent": "^5.2.2",
+    "to-zalgo": "^1.0.1",
+    "zalgo-js": "^1.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "a discord bot we're making to learn",
+  "main": "bot.js",
+  "author": "Zachary Morris/Anand Biehl",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.1.0",
+    "discord.js": "^12.1.1"
+  }
+}
