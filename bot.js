@@ -1,23 +1,13 @@
 'use strict';
 
-//🖕
-//zalgo stuff
 
-// Import the discord.js module
 const Discord = require('discord.js');
 const shell = require('child_process');
-// Create an instance of a Discord client
+
 const client = new Discord.Client();
 
-//initializing new roll module
-
-//const restart = require('./restart.sh');
 const fs = require('fs');
 
-/**
- * The ready event is vital, it means that only _after_ this will your bot start reacting to information
- * received from Discord
- */
 
 var botDeleted = 0;
 
@@ -25,13 +15,11 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 
-// Create an event listener for messages
 client.on('message', message => {
-  // If the message is "ping"
+
   if (message.content === 'ping') {
-   //  Send "pong" to the same channel
-    message.channel.send('pong');
   }
+
   if (!message.author.bot){
     console.log(message.content)
 
@@ -95,37 +83,9 @@ client.on('message', message => {
           return console.log(err);
         }
       })
-
-
-        
       }
-      
-
-
     }
-  }
-
-    
-    // insult generator
-
-
-
-    
-
-    //if (message.content.substring(2, message.content.length).length < 300){
-    //    message.channel.send("\n\n- ".concat(message.author.username));
-    //}
-
-      //message.delete();
-      //botDeleted = 1;
-     
-
-    
-    if (message.content.includes("!h")) {
-      message.author.send(help.help);
-    }
-
-    
+  }  
 });
 
  
